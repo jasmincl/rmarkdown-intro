@@ -1,0 +1,64 @@
+---
+title: "Example solution R Markdown Task"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(stringr)
+```
+
+## R Markdown Task: Bob Ross
+```{r out.width = "40%", fig.align = "left", echo = FALSE}
+knitr::include_graphics("../images/bob_ross.jpeg", auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE), 
+    dpi = NULL)
+```
+
+This script reads in data about elements contained in Bob Ross paintings by episode. The dataset was found in the [tidytuesday-Github-Repository](06.08.2019, https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-08-06) from August 6th 2019. 
+
+Firstly I will read in my dataset. 
+```{r get_data}
+bob_ross_original <- readRDS("bob_ross.rds")
+```
+It includes `r nrow(bob_ross_original)` observations and `r ncol(bob_ross_original)` variables.
+
+
+### Data preprocessing
+In order to work with the data later I will first clean it up. This includes setting variable names to small letters & bringing the data frame into a long format. This means that all elements that are currently one variables each will be united into one column called "element" and only those rows will be kept that contain an element that is contained in an episode.
+
+```{r clean_data}
+# all column names in small letters
+colnames(bob_ross_original) <- tolower(colnames(bob_ross_original))
+
+# bring in long format
+bob_ross <- bob_ross_original %>% 
+  # separate episode into season and episode & clean up
+  separate(episode, into = c("season", "episode"), sep = "E") %>% 
+  mutate(season = str_extract(season, "[:digit:]+")) %>%
+  # transform to integer
+  mutate_at(vars(season, episode), as.integer) %>%
+  # transform from wide to long format (all elements in one variable)
+  gather(element, contained, -season, -episode, -title) %>% # elements as variable instead of separate columns
+  # only keep the rows where an element is contained in an episode
+  filter(contained == 1) %>%
+  dplyr::select(-contained)
+```
+
+### Data Aggregation & Visualization
+Now that I have a clean dataset I will aggregate it in different ways and visualize the results. First I will have a look at how often waterfalls, mountains and lakes occur in each season. 
+```{r by_season}
+# elements by season
+season_elements <- bob_ross %>%
+  filter(element == "waterfall" | element == "mountain" | element == "lake") %>%
+  group_by(season, element) %>%
+  summarise(n = n())
+```
+
+I will visualize the result in a line plot, see Figure 1. 
+```{r plot_season, echo=F, fig.align="center", fig.width=10, fig.height=4}
+# line plot elements by season
+ggplot(season_elements) +
+  geom_line(aes(season, n, color = element))
+```

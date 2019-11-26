@@ -1,0 +1,29 @@
+---
+title: "ablauf"
+output: html_document
+---
+
+# RMarkdown
+- Intro with slides
+- Show examples
+- EXERCISE: turn Rscript into RMarkdown file
+
+Task: Transform R-Script into more helpful R Markdown file.
+Download Repository / Get Project Folder 
+Create new RMarkdown file. Give it a title.  
+let ```library()``` commands run but make sure that the output will not be in the document.
+Data cleaning: Display the code used but not the output. 
+Visualization: Include plots with summary results but not the code. 
+Describe what you are doing with text.
+
+Advanced:
+- Give your plots names and reference them in your text.
+- Include inline-variables that render with your code.
+- Display a table of first 5 lines of the dataframe used
+- Include hyperlink to tidytuesday-repository
+
+
+# Bookdown
+- Show examples
+- Intro
+- EXERCISE:

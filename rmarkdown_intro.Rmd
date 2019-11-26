@@ -1,0 +1,152 @@
+---
+title: "Rmarkdown & Bookdown Intro"
+author: "Jasmin Classen"
+date: "December 1st, 2019"
+output:
+  ioslides_presentation: default
+  slidy_presentation: default
+smaller: yes
+---
+# RMarkdown - Overview
+  
+## What is RMarkdown?
+- create dynamic documents with R
+- combination of markdown language and RCode
+- create html-reports, pdf-documents, presentation slides, ...
+
+# RMarkdown - Structure
+## Three components
+![Three components of a R Markdown file.](images/rm_structure.png)
+
+## YAML header
+- format entire document
+- e.g. what output, style (custom css files), templates etc. 
+
+```{r eval = F}
+---
+title: "Rmarkdown & Bookdown Intro"
+author: Jasmin Classen
+date: December 1st, 2019
+output: ioslides_presentation
+---
+```
+
+## Markdown-Syntax
+- Markdown is a simple language that allows you to specify fonts, font style, headings and much more
+- you can make text *italic* or **bold**
+- insert headings with hashtags (# for heading 1, ## for heading 2, ...)
+- Make lists
+  - with many
+    - levels
+- More infos [here](https://bookdown.org/yihui/rmarkdown/markdown-syntax.html)
+
+
+## Code Chunks
+- embed RCode and use it for anything you normally do
+- produce tables, plots or text output and embed it into your document
+
+```{r}
+# write a comment
+print("Hello World!")
+```
+- fine grain output via code chunks options:
+  - ```{r echo = FALSE}``` : evaluate code & show output, exclude code itself
+  - ```{r include = FALSE}``` : evaluate code, exclude output & code itself
+  - ```{r myplot, fig.height = 4}```: set height of a plot
+- many more chunk options [here](https://yihui.org/knitr/options/)
+
+# Project Workflow
+## R Projects
+- make project managment simple
+- Restores your last RStudio session with all files used still open
+- Access to R History from last session
+- Own directory for each project 
+  - no more ...
+```{r eval = F}
+setwd("C:Users\jasmin\afolder\anotherfolder\wowthisislong\
+      morefolders\hereiwanttobe")
+```
+- Let's create our own RProject for our exercises now! 
+- For more info on Project Workflow in R [Jenny Bryan](https://rstats.wtf/project-oriented-workflow.html) is **the** expert
+
+## Exercise 1: R Markdown Basics
+Create a new R Markdown file and use it to transform the R Script provided into a better understandable report! 
+
+#### Tasks {.smaller}
+Download Repository / Get Project Folder 
+Create new RMarkdown file. Give it a title.  
+let ```library()``` commands run but make sure that the output will not be in the document.
+Data cleaning: Display the code used but not the output. 
+Visualization: Include plots with summary results but not the code. 
+Describe what you are doing with text.
+
+#### Advanced Tasks:
+- Give your plots names and reference them in your text.
+- Include inline-variables that render with your code.
+- Display a table of first 5 lines of the dataframe used
+- Include hyperlink to tidytuesday-repository
+- add new options to YAML-header to reformat your file
+
+# Writing Books with Bookdown
+## Bookdown Intro
+- Rpackage by Yihui Xie that enables writing books & long reports with RMarkdown
+- Combines advantages of writing dynamic documents with features specifically important for longer projects:
+  - referencing
+  - cross-referencing of figures and tables
+  - HTML, PDF and e-book output
+  - easy and clear structuring of chapters & sections
+  
+## Components / Structure
+- ??screenshot of finished project directory
+- ```index.Rmd```
+  - Contains YAML & other options to tell bookdown how to render your book
+- ```.Rmd``` files (e.g. ```introduction.Rmd```, ```theory.Rmd```, ...)
+  - "Normal" R Markdown-files containing the actual content of your book
+  - Can be separated according chapters or whichever organization you find best
+  - Will be compiled in *alphanumeric* order therefore take care of right naming
+  - Using headers automatically determines structure (no need to mention filenames anyhwere else for structure)
+- ```references.bib```
+  - bib file with all your references
+  - used they same way like in LaTeX
+  - can be exportet from most common reference management tools
+- ```data``` - folder contains all datasets used in your book
+- ```scripts``` - folder contains all RScripts used in your book
+  
+## Simple Example
+## Complex Example
+- Citations, cross-referencing, referencing, incorporating data, figures, tables
+
+## Compiling 
+- YAML
+- preamble.tex
+- doc_preface.tex
+- render
+  - do not knit!
+- **Exercise 2**: Let's render our first book!
+
+```{r eval = F}
+bookdown::render_book("index.Rmd", "bookdown::pdf_book")
+```
+
+# Helpful Sources {.smaller}
+#### RMarkdown Basics
+- [R Markdonw Cheatsheet](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+- [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+- [Markdown Basics](https://rmarkdown.rstudio.com/authoring_basics.html)
+
+#### Bookdown:
+
+- [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/) (Yihui Xie)
+- [Bookdown Template](https://github.com/rstudio/bookdown-demo) used in Yihui Xies Book and the corresponding minimal [bookdown example](https://bookdown.org/yihui/bookdown-demo/intro.html)
+- [Writing Your Thesis in Bookdown](https://eddjberry.netlify.com/post/writing-your-thesis-with-bookdown/) (Ed D. J. Berry )
+- [Making Books in R Markdown](https://arm.rbind.io/days/day1/bookdown/) (Alison Hill, 2019-01-16, rstudio::conf)
+- [Dissertating with RMarkdonw adn Bookdown](https://bookdown.org/connect/#/apps/2515/access)
+  
+Well known (open-source) books written in bookdown: 
+
+- [R for Data Science](https://r4ds.had.co.nz/) (Hadley Wickham)
+- [Efficient R programming](https://bookdown.org/csgillespie/efficientR/) (Colin Gillespie, Robin Lovelace)
+
+#### Others:
+- [Project-oriented workflow](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/) (Jenny Bryan, December 2017)
+- [Using R Projects](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
