@@ -1,2 +1,2 @@
 # rmarkdown-intro
-Workshop Introduction to Markdown for CorrelAid-Meetup.
+Workshop Introduction to RMarkdown & Bookdown for CorrelAid-Meetup.
