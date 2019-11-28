@@ -1,0 +1,29 @@
+---
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Exercise 1: R Markdown Basics
+Create a new R Markdown file and use it to transform the R Script **rmarkdown_bobross.R** provided into a better understandable report! 
+
+#### Instructions
+1. Download Repository / Get Project Folder 
+2. Create new RMarkdown file. 
+3. Start trying things out
+
+#### Tasks / Things to try out
+- Give your document a title
+- let ```library()``` commands run but make sure that the output will not be in the document.
+- Data cleaning: Display the code used but not the output. 
+- Visualization: Include plots with summary results but not the code. 
+- Describe what you are doing with text.
+
+#### Advanced Tasks
+- Include inline-variables that render with your code.
+- Display a table of first 5 lines of the dataframe used
+- Include hyperlink to tidytuesday-repository
+- add new options to YAML-header to reformat your file. E.g., can you change font? 
