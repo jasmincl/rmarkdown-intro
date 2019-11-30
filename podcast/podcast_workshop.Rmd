@@ -64,9 +64,16 @@ knitr::include_graphics("meme_noonelistens.jpeg", auto_pdf = getOption("knitr.gr
 ```
 </div>
 
-## Future Ideas / Shows
-- New Show that is more thematic (about Data Science / Programming topics)
+## Remote Recording
+- For the episode with Ellen Koenig I used zencastr
+- [Link](https://zencastr.com/)
+- Let's you remotely record & download interviews/talks
+- Download each voice separately (enables better editing if different qualities of voice)
+- Easily add them back together in audacity
 
 ## Music / Intro - Jingle
 http://freemusicarchive.org/music/Pierce_Murphy/This_Isnt_Magic_It_Is_Just_Music
 Hey Mercy 
+
+## Future Ideas / Shows
+- New Show that is more thematic (about Data Science / Programming topics)
