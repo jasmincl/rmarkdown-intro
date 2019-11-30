@@ -1,0 +1,72 @@
+---
+title: "How to Podcast - A non-expert guide"
+author: "Jasmin Classen"
+date: "December 1st, 2019"
+output: 
+  ioslides_presentation: default
+smaller: yes
+---
+## CorrelTalk
+<div style="float: left; width: 50%;">
+- Started November 2018
+- First episode: Meetup-Podcast
+- Followed by "Data Science in der Praxis" - Show
+  - Interviews with working data scientists about their job & how they got there
+  
+</div>
+
+
+<div style="float: right; width: 50%;">
+
+```{r out.width = "80%", fig.align = "left", echo = FALSE}
+knitr::include_graphics("meme_educatedaf.png", auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE), 
+    dpi = NULL)
+```
+</div>
+
+## My first Podcast - Episode
+- My first podcast: Meetup-reporting last year
+- *Approach*: Just ask random people, get a bunch of audios and then cut them together so it fits
+- Probably not the best approach :D
+- Future: Plan better, especially if you interview more people
+
+## Data Science in der Praxis Episodes
+- Better planning, send questions to participant beforehand
+- Conversation mostly follows these questions but it is more a conversation than a planned script
+- Edit video & send to interview partner for review
+
+## Software: Audacity
+- Free & open-source audio software
+- import ```.mp4``` files & edit them
+- export to ```.mp4```
+- very good & complex software, so far I only use the basics
+- [Link](https://www.audacityteam.org/)
+
+## What I learned so far
+- You can always edit out things
+- You can rerecord your own voice
+- BUT: usually sound circumstances are different once you edit 
+- Be careful there is no background noise (small stuff matters! E.g. tapping the table while talking)
+
+## Challenges
+<div style="float: left; width: 50%;">
+
+- User numbers go down
+- How to do marketing right?
+- Adjust contents? More about topics?
+</div>
+
+<div style="float: right; width: 50%;">
+
+```{r out.width = "80%", fig.align = "left", echo = FALSE}
+knitr::include_graphics("meme_noonelistens.jpeg", auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE), 
+    dpi = NULL)
+```
+</div>
+
+## Future Ideas / Shows
+- New Show that is more thematic (about Data Science / Programming topics)
+
+## Music / Intro - Jingle
+http://freemusicarchive.org/music/Pierce_Murphy/This_Isnt_Magic_It_Is_Just_Music
+Hey Mercy 

@@ -1,0 +1,63 @@
+---
+title: 'CSS - Response Paper 1' 
+subtitle: 'Jasmin Classen, 9. November 2019' 
+
+bibliography: /home/minux/Documents/Uni/bibfiles/css.bib
+csl: chicago.csl
+output: 
+ bookdown::pdf_document2:
+  toc: no
+geometry: "left=4cm,right=4cm,top=2cm,bottom=4cm"
+header-includes:
+ - \usepackage{color}
+ - \usepackage{dcolumn}
+ - \usepackage{amsmath}
+ - \usepackage{booktabs,caption}
+---
+This week's papers offer insight into diverse strategies to apply automated analysis of social media data for different areas of social science research. After summarizing each paper separately I will conclude with a comparative discussion.
+
+# Paper Overview
+## Golder and Macy (2010): Diurnal and Seasonal Mood Vary with Work, Sleep, and Daylength Across Diverse Cultures
+@Goulder2011 analyze how mood varies on a hourly, daily and weekly basis using Twitter messages from 2.4 million Twitter users in 84 countries. 
+
+They classified tweets in positive (enthusiasm, delight,...) or negative affect (anger, fear...) using the Linguistic Inquiry and Word Count, a lexicon used to classify different kinds of texts for diffrent behavioural and psychological dimensions. 
+
+In their analysis they found similar patterns across all weekdays, including weekends as well as between cultures.
+According to the authors their findings justify the sleep-circadian-cycle theory where mood is affected by the inner biological clock and number of sleep hours instead of environmental stress.
+
+Even though providing some interesting insights in the cycle of mood swings this paper has some serious limitations. 
+As Golder and Macy also discuss in their conclusion, they have no other information about users apart from geography and tweet timestamp. Mood is surely influenced by other factors in individuals' lives. Still, the authors claim generalizability of their results to real life of Twitter users. 
+They do not provide any critical discussion of limitations of using automated social media analysis such as dealing with a non-representative sample of the population or platform specific or societal behavioural norms.
+
+## King et al. (2014): Reverse-engineering censorship in China: Randomized experimentation and participant observation
+In their paper, @King2014 investigated censorship of chinese social media platforms by the chinese government. They analyzed which content is censored and how. 
+
+To do so, multiple strategies were pursued: Firstly, they created accounts on multiple chinese social media platforms on which they uploaded different contents in order to see which ones would be censored.
+Secondly, they created their own social media website and ordered software from chinese companies in order to reverse engineer how censorship was implemented technically. 
+
+They found that criticism of the state or top leaders was allowed, as well as talking about sensitive topics such as Tibet. Specifically targeted for censorship were posts that could lead to crowd creation and collective action against the state, for example the support of a rally or protest. 
+
+By combining different approaches, this elaborate and extensive experiment thoroughly probes how censorship works in China. 
+
+## Spaiser et al. (2017): Communication power struggles on social media: A case study of the 2011–12 Russian protests
+@Spaiser2017 analyzed Twitter messages during the presidential elections in Russia 2011-2012 to assess how and with what strategies different political forces tried to influence and
+manipulate public opinion on Twitter.
+
+The authors extracted 700.000 russian tweets before, during and after elections in 2011 and 2012 and classified 1000 unique users in pro-Putin and opposition using sentiment-analysis and specific keywords. They then conducted a social network analysis of the most active users in order to identify the most influential actors and relations between the different groups. In a next step they analyzed their political communication strategies. 
+
+They found that all as pro-Putin, opposition and general public classified accounts where well interconnected which means that contents from both pro- and anti-government forces reached all groups. 
+Concerning their strategies, the authors found that at the beginning the opposition started a protest movement with high momentum that was quickly overturned by pro-Putin accounts who strategically influenced discourse on Twitter in their favour. They used *framing* and *priming* strategies as well as *hijacking* the oppositions call for fair elections. Even though the opposition tried to regain power themselves they did not succed. 
+
+By focusing on Russia, @Spaiser2017 make use of a special setting: With much of other media being in favor of the state Twitter plays an important role in russian political discourse. Their results show how social media is not only used as a communication platform but also an instrument to influence opinion and discourse.
+
+As @Goulder2011 this paper makes use of classification and volume of Twitter messages to answer their research question. This method's main difficulty is the limited ability to derive offline from online behaviour. @Spaiser2017, however, more sensitively address this issue. They validate their "Twittersphere"-focussed research with real time election events and clearly focus their research question on online social media strategies of political actors. 
+
+# Conclusion
+This week's reading shows applications of general strategies & methods in social media extraction and analysis. 
+The author's deal with known limitations of such methods in different ways. 
+While @Goulder2011 mainly ignore them, @Spaiser2017 clearly focus their analysis on online behaviour and validate assumptions with real-time events. @King2014 use an experimental design to explore limitations of chinese social media. 
+
+The focus of @King2014 and @Spaiser2017 on social media in authoritarian regimes shows an even more difficult sphere: How to study social patterns in social media if information is systematically limited?
+@King2014 show a possibility on how to investigate what information is available and what is not. Their approach could be applied to validation of social media data in general - determining what information is shown, at what times and in what order. 
+
+# References
