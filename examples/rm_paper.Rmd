@@ -1,0 +1,37 @@
+---
+title: 'Bob Ross ' 
+subtitle: 'Jasmin Classen, 1. Dezember 2019' 
+
+bibliography: /home/minux/Documents/Uni/bibfiles/css.bib
+csl: chicago.csl
+output: 
+ bookdown::pdf_document2:
+  toc: no
+geometry: "left=4cm,right=4cm,top=2cm,bottom=4cm"
+header-includes:
+ - \usepackage{color}
+ - \usepackage{dcolumn}
+ - \usepackage{amsmath}
+ - \usepackage{booktabs,caption}
+---
+Robert Norman Ross (October 29, 1942 – July 4, 1995) was an American painter, art instructor, and television host. He was the creator and host of The Joy of Painting, an instructional television program that aired from 1983 to 1994 on PBS in the United States, and also aired in Canada, Latin America, and Europe. Ross went from being a public television personality in the 1980s and 1990s to being an Internet celebrity in the 21st century, with his talent and kindness leading to major popularity with fans on YouTube, Twitch, and many other websites many years after his death.
+
+# Early life
+Ross was born in Daytona Beach, Florida, to Jack and Ollie Ross (a Cherokee carpenter and a waitress, respectively), and raised in Orlando, Florida.[4][5] As a child, Ross entertained himself by caring for injured animals, purportedly including an armadillo, snake, and alligator. One of these animals, a squirrel named Peapod (full nickname "Peapod The Pocket Squirrel"), was featured most prominently in a few episodes of his show. Another squirrel, one with epilepsy Bob called "Squirrely Wirrelly Brown" (which was given 6 months to live by a veterinarian but Bob talked about her 4 to 5 years after getting her) was also on the show less frequently (she was usually kept at home in Ross's basement in a big cage next to where she'd watch him paint).[5][4] He had a half-brother, Jim, whom he mentioned in passing on his show.[6] Ross dropped out of high school in the 9th grade to work as a carpenter with his father, Jack Ross, when he lost part of his left index finger. This, however, did not affect the way he held his palette while painting. 
+
+## Military career
+
+In 1961, 18-year-old Ross enlisted in the United States Air Force and was put into service as a medical records technician.[7]:15 He eventually rose to the rank of master sergeant and served as the first sergeant of the U.S. Air Force Clinic at Eielson Air Force Base in Alaska,[8][9] where he first saw the snow and mountains that later became recurring themes in his artwork. He developed his quick-painting technique to create art for sale during brief daily work breaks.[9] Having held military positions that required him to be, in his own words, "tough" and "mean," "the guy who makes you scrub the latrine, the guy who makes you make your bed, the guy who screams at you for being late to work." Ross decided that if he ever left the military, he would never yell or raise his voice again.[9]
+Career as a painter
+
+During his 20-year tenure with the U.S. Air Force, Ross developed a taste for painting after attending an art class at the Anchorage U.S.O. club. He found himself frequently at odds with many of his painting instructors, who were more interested in abstract painting. In Ross's own words: "They'd tell you what makes a tree, but they wouldn't tell you how to paint a tree."[citation needed]
+
+Ross was working as a part-time bartender when he discovered a TV show called The Magic of Oil Painting, hosted by German painter Bill Alexander.[7]:17–18 Alexander touted a 16th-century style of painting called "alla prima" (Italian for "first attempt"), better known as "wet-on-wet," that allowed him to finish a painting in a little under 30 minutes. Ross studied and became quite good at alla prima through Alexander's show, and began selling Alaskan landscapes painted on the inside of novelty gold-mining pans.[5][9] Eventually, Ross's income from gold pan sales surpassed his military salary. He retired from the Air Force in 1981 with the rank of Master Sergeant after 20 years of service.
+
+# Personal life
+Ross had one son, Steven Ross, with his first wife, Vivian Ridge. Steven, also a talented painter, occasionally appeared on The Joy of Painting and became a Ross-certified instructor.[11] Steven appeared on camera in the last episode of Season 1, in which he read a series of general "how-to" questions sent in by viewers during the season, and Bob answered them one at a time, technique by technique, until he had completed an entire painting. 
+
+
+And now I randomly cite @King2014 and @Goulder2011 to show how references work.
+
+# References

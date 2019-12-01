@@ -1,4 +1,0 @@
-- open correlaid wiki
-- open bookdown examples
-- open tidytuesday repo
-- open R for compiling book later
