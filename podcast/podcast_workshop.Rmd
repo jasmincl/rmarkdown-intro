@@ -1,5 +1,5 @@
 ---
-title: "How to Podcast - A non-expert guide"
+title: "How to Podcast - An Introduction"
 author: "Jasmin Classen"
 date: "December 1st, 2019"
 output: 
